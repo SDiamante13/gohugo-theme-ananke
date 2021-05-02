@@ -45,6 +45,11 @@
         <span class="f6 mv4 dib tracked"> - {{ .WordCount}} words</span>
       {{ end }}
     </header>
+
+    <aside class="hidden lg:block table-of-contents">
+      {{- partial "menu-contextual.html" . -}}
+  </aside>
+
     <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
       {{- .Content -}}
       {{- partial "tags.html" . -}}
@@ -57,10 +62,6 @@
       {{ end }}
       </div>
     </div>
-
-    <aside class="w-30-l mt6-l">
-      {{- partial "menu-contextual.html" . -}}
-    </aside>
 
   </article>
 {{ end }}
