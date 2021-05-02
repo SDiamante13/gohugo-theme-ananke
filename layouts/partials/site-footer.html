@@ -3,6 +3,7 @@
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
     &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
   </a>
+  <div style="color:white; font-size: 14px; font-style: italic; padding-top: 10px"> "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."<br/>- Patrick McKenzie</div>
     <div>{{ partial "social-follow.html" . }}</div>
   </div>
 </footer>
